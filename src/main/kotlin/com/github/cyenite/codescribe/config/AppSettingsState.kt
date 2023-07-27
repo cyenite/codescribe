@@ -20,7 +20,7 @@ class AppSettingsState : PersistentStateComponent<AppSettingsState?> {
     var apiBase = "https://api.openai.com/v1"
     var apiKey = ""
     var temperature = 0.1
-    var useGPT4 = true
+    var useGPT4 = false
     var tokenCounter = 0
     private val mostUsedHistory: MutableMap<String, Int> = HashMap()
     private val mostRecentHistory: MutableList<String> = ArrayList()
@@ -31,7 +31,7 @@ class AppSettingsState : PersistentStateComponent<AppSettingsState?> {
     var commentTemplate = "Given a function signature and its details, generate a comment in the following format:\n" +
             "\n" +
             "Function Signature:\n" +
-            "  - Description: {description_of_the_function}\n" +
+            "  - Description using passive voice: {description_of_the_function}\n" +
             "  - Parameters:\n" +
             "    1. Type: {type1}, Name: {name1}, Requirement: {required/optional}, Description: {description_of_parameter_1}\n" +
             "    2. Type: {type2}, Name: {name2}, Requirement: {required/optional}, Description: {description_of_parameter_2}\n" +
@@ -41,7 +41,7 @@ class AppSettingsState : PersistentStateComponent<AppSettingsState?> {
             "\n" +
             "Output:\n" +
             "\n" +
-            "  /// This is the {description_of_the_function}.\n" +
+            "  /// {description_of_the_function}.\n" +
             "  ///\n" +
             "  /// > * _@param: ({required/optional})_ __[{type1}]__ {name1} - {description_of_parameter_1}\n" +
             "  ///\n" +

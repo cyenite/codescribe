@@ -2,6 +2,13 @@
 
 # Codescribe Changelog
 
+## [0.0.2]
+
+### Added
+- Added passive voice for Flutter/Dart code documentation
+
+- Fixed issue with brief generic comments
+
 ## [0.0.1]
 
 ### Added
