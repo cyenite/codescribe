@@ -1,0 +1,56 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.github.cyenite.codescribe</id>
+    <name>AI Code Documentation</name>
+    <vendor url="https://cyenite.showwcase.com/">Cyenite</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.github.cyenite.codescribe.config.AppSettingsState"/>
+        <applicationConfigurable parentId="tools"
+                                 instance="com.github.cyenite.codescribe.config.AppSettingsConfigurable"
+                                 id="org.intellij.sdk.settings.AppSettingsConfigurable"
+                                 displayName="Codescribe"/>
+    </extensions>
+
+    <applicationListeners>
+        <listener class="com.github.cyenite.codescribe.ApplicationEvents" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+    </applicationListeners>
+    <actions>
+        <group id="com.github.cyenite.codescribe.EditorMenu"
+               class="com.intellij.openapi.actionSystem.DefaultActionGroup"
+               popup="true"
+               text="_Codescribe"
+               icon="AllIcons.Actions.Lightning"
+               description="AI code documentation tool">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </group>
+        <group id="com.github.cyenite.codescribe.ProjectMenu"
+               class="com.intellij.openapi.actionSystem.DefaultActionGroup"
+               popup="true"
+               text="_Codescribe"
+               icon="AllIcons.Actions.Lightning"
+               description="AI code documentation tool">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+        </group>
+
+        <action class="com.github.cyenite.codescribe.actions.generic.AppendAction"
+                text="_Document Function (Dart)"
+                description="Document code using Chat API">
+            <add-to-group group-id="com.github.cyenite.codescribe.EditorMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift control D" second-keystroke="A"/>
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta I" second-keystroke="A"/>
+        </action>
+
+        <action class="com.github.cyenite.codescribe.actions.code.CommentsAction"
+                text="Add Code _Comments"
+                description="Add code comments">
+            <add-to-group group-id="com.github.cyenite.codescribe.EditorMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift control Q" second-keystroke="C"/>
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta I" second-keystroke="C"/>
+        </action>
+
+    </actions>
+
+</idea-plugin>

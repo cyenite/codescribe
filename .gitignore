@@ -1,0 +1,13 @@
+.gradle
+.idea
+.qodana
+build
+openai.key
+.run
+chain.crt
+*.pem
+api.log.json
+*.log.java
+*.log
+api.*
+.skynet
