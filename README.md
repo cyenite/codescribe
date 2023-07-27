@@ -3,7 +3,7 @@
 ![Build](https://github.com/cyenite/codescribe/workflows/Build/badge.svg)
 <!-- Plugin description -->
 
-A documentation plugin that uses the power of artificial intelligence to make coding swifter and simpler. It is compatible with popular autocomplete-based AI plugins such as GitHub Copilot and AWS CodeWhisperer, and is explicitly invoked through the context menu.
+A documentation plugin that uses the power of artificial intelligence to make coding swifter and save on time.
 
 To use Codescribe, you must have an OpenAI access token. With this token, you can access a variety of features, including code comments and function documentation.
 
