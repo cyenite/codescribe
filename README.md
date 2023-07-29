@@ -1,8 +1,11 @@
+<a href="https://plugins.jetbrains.com/plugin/22374-codescribe">
+  <img src="https://plugins.jetbrains.com/files/22374/369624/icon/pluginIcon.svg" width="100" height="100" alt="Marketplace">
+</a>
+
 # Codescribe
 
 ![Build](https://github.com/cyenite/codescribe/workflows/Build/badge.svg)
 
-<iframe width="245px" height="48px" src="https://plugins.jetbrains.com/embeddable/install/22374"></iframe>
 
 <!-- Plugin description -->
 
