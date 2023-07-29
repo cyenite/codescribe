@@ -13,4 +13,5 @@
 
 ### Added
 - Initial implementation
+- [0.0.2]: https://github.com/cyenite/codescribe/commits/v0.0.2
 - Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
