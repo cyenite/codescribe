@@ -1,6 +1,9 @@
 # Codescribe
 
 ![Build](https://github.com/cyenite/codescribe/workflows/Build/badge.svg)
+
+<iframe width="245px" height="48px" src="https://plugins.jetbrains.com/embeddable/install/22374"></iframe>
+
 <!-- Plugin description -->
 
 A documentation plugin that uses the power of artificial intelligence to make coding swifter and save on time.
