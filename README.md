@@ -1,7 +1,7 @@
 <a href="https://plugins.jetbrains.com/plugin/22374-codescribe">
-  <img src="https://plugins.jetbrains.com/files/22374/369624/icon/pluginIcon.svg" width="100" height="100" alt="Marketplace">
+  <img src="https://res.cloudinary.com/snyk/image/upload/v1530707820/wordpress-sync/Blog-Design_JetBrains-IDE-plugin_.png" width="100%" alt="Jetbrains Plugin">
 </a>
-
+  
 # Codescribe
 
 ![Build](https://github.com/cyenite/codescribe/workflows/Build/badge.svg)
